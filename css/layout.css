@@ -1,0 +1,61 @@
+/* 1º posicionamento */
+/* 2º display e box model */
+/* 3º cores */
+/* 4º texto */
+/* 5º outros */
+
+/*--------------------------*\
+            HEADER
+\*--------------------------*/
+
+.layout-header{
+    height: 100px;
+    /*line-height: 85px;*/
+    border-bottom: 15px solid #3c003c;
+    
+    background-color: #660066;
+}
+
+.layout-header--logo{
+    height: 100px;
+    /*line-height: 85px;*/
+    border-bottom: 15px solid #3c003c;
+    
+    background-color: #660066;
+    
+    text-align: center;
+}
+
+/*--------------------------*\
+            SIDEBAR
+\*--------------------------*/
+
+.layout-sidebar{
+    margin: 0;
+    padding: 30px 20px;
+    
+}
+
+
+/*--------------------------*\
+            FOOTER
+\*--------------------------*/
+
+.Layout-footer{
+    height: 70px;
+    border-top: 10px solid #3c003c;
+    
+    background-color: #660066;
+}
+
+/*--------------------------*\
+          BACKGROUND
+\*--------------------------*/
+
+.layout-background{
+    background-image: url("../img/studentsok.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+

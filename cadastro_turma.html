@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html lang="pt-br">
+    <head>
+        <title>SDLD</title>
+        <meta charset="utf-8"/>
+        <meta charset="utf-8"/>
+		<meta name="description" content="Sistema de Distribuição de Livros Didáticos."/>
+		<meta name="keywords" content="livro, distribuição, didaticos, ensino"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="css/components.css"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    </head>
+    <body>
+        
+        <header class="layout-header">
+            <div class="container">
+                <nav>
+                    <h1 class="col-sm-2"><a href="index.html"><img src="img/logo.png" height="50px" alt="Logotipo SDLD"/></a></h1>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class=" button button__menu--item" href="index.html">Cadastro</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="livros.html">Livros</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="alunos.html">Alunos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="turmas.html">Turmas</a>
+                            </li>
+                            <li class="menu__item menu__lastitem">
+                                <a class="button button__menu--item" href="distribuicao_entrega.html">Distribuição</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+                <div class="container">
+                    <div class="row">
+                        <ul class="layout-sidebar col-sm-3">
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="index.html">Livros</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="cadastro_aluno.html">Alunos</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="cadastro_turma.html">Turmas</a>
+                            </li>
+                        </ul>
+                    
+                        <section>
+                            <div class="col-sm-9">
+                                <h2 class="form__title">Cadastro de turma</h2>
+                                <div class="row">
+                                    <div class="col-sm-3">    
+                                        <div class="enter-group">
+                                            <label for="codigoturma">Código:</label>
+                                            <input id="codigoturma" name="codigoturma" maxlength="7" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="curso">Curso:</label>
+                                            <select id="curso" name="curso" class="field" required>
+                                                <option> - </option>
+                                                <option value="Edificações">Edificações</option>
+                                                <option value="Eletrotécnica">Eletrotécnica</option>
+                                                <option value="Informática">Informática</option>
+                                                <option value="Química">Química</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="enter-group">
+                                            <label for="ano">Ano:</label>
+                                            <input id="ano" name="ano" maxlength="4" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="senha">Senha:</label>
+                                            <input id="senha" name="senha" type="password" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button__form" href="#">Cadastrar</a>
+                                
+                            </div>
+                            
+                        </section>
+                    </div>
+                </div>
+        </section>
+        
+        <footer style="position: absolute; bottom: 0; left: 0; right: 0;" class="layout-footer">
+            <div class="container">
+                <p class="footer__text">&copy; 2019. Sistema de Distribuição de Livros Didáticos - Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>

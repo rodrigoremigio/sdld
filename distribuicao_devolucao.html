@@ -1,0 +1,230 @@
+<!DOCTYPE>
+<html lang="pt-br">
+    <head>
+        <title>SDLD</title>
+        <meta charset="utf-8"/>
+        <meta charset="utf-8"/>
+		<meta name="description" content="Sistema de Distribuição de Livros Didáticos."/>
+		<meta name="keywords" content="livro, distribuição, didaticos, ensino"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="css/components.css"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    </head>
+    <body>
+        
+        <header class="layout-header">
+            <div class="container">
+                <nav>
+                    <h1 class="col-sm-2"><a href="index.html"><img src="img/logo.png" height="50px" alt="Logotipo SDLD"/></a></h1>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class=" button button__menu--item" href="index.html">Cadastro</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="livros.html">Livros</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="alunos.html">Alunos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="turmas.html">Turmas</a>
+                            </li>
+                            <li class="menu__item menu__lastitem">
+                                <a class="button button__menu--item" href="distribuicao_entrega.html">Distribuição</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+                <div class="container">
+                    <div class="row">
+                        <ul class="layout-sidebar col-sm-3">
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="distribuicao_entrega.html">Entrega</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="distribuicao_devolucao.html">Devolução</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="distribuicao_pendencias.html">Pendências</a>
+                            </li>
+                        </ul>
+                    
+                        <section>
+                            <div class="col-sm-9">
+                                <h2 class="form__title">Devolução de livros</h2>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="matricula">Matrícula do aluno:</label>
+                                            <input id="matricula" name="matricula" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <a><input type="submit" value="OK" style="margin-top: 23px; color: #000000;"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="data">Data:</label>
+                                            <input id="data" name="data" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Nome:</label>
+                                            <input name="nomealuno" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label>Curso:</label>
+                                            <input name="curso" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de biologia:</label>
+                                            <input name="livrobiologia" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de física:</label>
+                                            <input name="livrofisica" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de geografia:</label>
+                                            <input name="livrogeografia" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de história:</label>
+                                            <input name="livrohistoria" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de inglês:</label>
+                                            <input name="livroingles" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de matemática:</label>
+                                            <input name="livromatematica" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de português:</label>
+                                            <input name="livroportugues" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Livro de química:</label>
+                                            <input name="livroquimica" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <label>Devolvido:</label>
+                                            <input name="devolvido" type="checkbox" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="senha">Senha:</label>
+                                            <input id="senha" name="senha" type="password" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button__form" href="#">Confirmar</a>
+                                
+                            </div>
+                            
+                        </section>
+                    </div>
+                </div>
+        </section>
+        
+        <footer class="layout-footer">
+            <div class="container">
+                <p class="footer__text">&copy; 2019. Sistema de Distribuição de Livros Didáticos - Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>

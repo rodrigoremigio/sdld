@@ -1,0 +1,222 @@
+<!DOCTYPE>
+<html lang="pt-br">
+    <head>
+        <title>SDLD</title>
+        <meta charset="utf-8"/>
+        <meta charset="utf-8"/>
+		<meta name="description" content="Sistema de Distribuição de Livros Didáticos."/>
+		<meta name="keywords" content="livro, distribuição, didaticos, ensino"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="css/components.css"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    </head>
+    <body>
+        
+        <header class="layout-header">
+            <div class="container">
+                <nav>
+                    <h1 class="col-sm-2"><a href="index.html"><img src="img/logo.png" height="50px" alt="Logotipo SDLD"/></a></h1>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class=" button button__menu--item" href="index.html">Cadastro</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="livros.html">Livros</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="alunos.html">Alunos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="button button__menu--item" href="turmas.html">Turmas</a>
+                            </li>
+                            <li class="menu__item menu__lastitem">
+                                <a class="button button__menu--item" href="distribuicao_entrega.html">Distribuição</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+                <div class="container">
+                    <div class="row">
+                        <ul class="layout-sidebar col-sm-3">
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="distribuicao_entrega.html">Entrega</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="distribuicao_devolucao.html">Devolução</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="button button__sidebar--item" href="distribuicao_pendencias.html">Pendências</a>
+                            </li>
+                        </ul>
+                    
+                        <section>
+                            <div class="col-sm-9">
+                                <h2 class="form__title">Entrega de livros</h2>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="data">Data:</label>
+                                            <input id="data" name="data" type="date" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="matricula">Matrícula do aluno:</label>
+                                            <input id="matricula" name="matricula" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <div class="enter-group">
+                                            <a><input type="submit" value="OK" style="margin-top: 23px; color: #000000;"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="enter-group">
+                                            <label>Nome:</label>
+                                            <input name="nomealuno" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label>Curso:</label>
+                                            <input name="curso" type="text" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livrobiologia">Livro de biologia:</label>
+                                            <select id="livrobiologia" name="livrobiologia" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="biologia1">Biologia1</option>
+                                                <option value="biologia2">Biologia2</option>
+                                                <option value="biologia3">Biologia3</option>
+                                                <option value="biologia4">Biologia4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livrofisica">Livro de física:</label>
+                                            <select id="livrofisica" name="livrofisica" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="fisica1">Física1</option>
+                                                <option value="fisica2">Física2</option>
+                                                <option value="fisica3">Física3</option>
+                                                <option value="fisica4">Física4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livrogeografia">Livro de geografia:</label>
+                                            <select id="livrogeografia" name="livrogeografia" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="geografia1">Geografia1</option>
+                                                <option value="geografia2">Geografia2</option>
+                                                <option value="geografia3">Geografia3</option>
+                                                <option value="geografia4">Geografia4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livrohistoria">Livro de história:</label>
+                                            <select id="livrohistoria" name="livrohistoria" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="historia1">História1</option>
+                                                <option value="historia2">História2</option>
+                                                <option value="historia3">História3</option>
+                                                <option value="historia4">História4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livroingles">Livro de inglês:</label>
+                                            <select id="livroingles" name="livroingles" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="ingles1">Inglês1</option>
+                                                <option value="ingles2">Inglês2</option>
+                                                <option value="ingles3">Inglês3</option>
+                                                <option value="ingles4">Inglês4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livromatematica">Livro de matemática:</label>
+                                            <select id="livromatematica" name="livromatematica" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="matematica1">Matemática1</option>
+                                                <option value="matematica2">Matemática2</option>
+                                                <option value="matematica3">Matemática3</option>
+                                                <option value="matematica4">Matemática4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livroportugues">Livro de português:</label>
+                                            <select id="livroportugues" name="livroportugues" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="portugues1">Português1</option>
+                                                <option value="portugues2">Português2</option>
+                                                <option value="portugues3">Português3</option>
+                                                <option value="portugues4">Português4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="enter-group">
+                                            <label for="livroquimica">Livro de química:</label>
+                                            <select id="livroquimica" name="livroquimica" class="field" required>
+                                                <option> Nenhum </option>
+                                                <option value="quimica1">Química1</option>
+                                                <option value="quimica2">Química2</option>
+                                                <option value="quimica3">Química3</option>
+                                                <option value="quimica4">Química4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="senha">Senha:</label>
+                                            <input id="senha" name="senha" type="password" class="field" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button button__form" href="#">Confirmar</a>
+                                
+                            </div>
+                            
+                        </section>
+                    </div>
+                </div>
+        </section>
+        
+        <footer class="layout-footer">
+            <div class="container">
+                <p class="footer__text">&copy; 2019. Sistema de Distribuição de Livros Didáticos - Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>

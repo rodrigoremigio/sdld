@@ -1,0 +1,203 @@
+/* 1º posicionamento */
+/* 2º display e box model */
+/* 3º cores */
+/* 4º texto */
+/* 5º outros */
+
+/*--------------------------*\
+            MENU
+\*--------------------------*/
+
+.menu{
+    float: right;
+    margin: 0;
+    padding: 0px 0px;
+    
+    font-size: 1.6rem;
+    
+}
+
+.menu__item{
+    display: inline-block;
+}
+
+.menu__lastitem{
+    padding-right: 0px;
+}
+
+/*--------------------------*\
+            BUTTON
+\*--------------------------*/
+
+.button{
+    margin: 0px 0px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    
+    background-color: #dddddd;
+    border: none;
+    color: #000000;
+    
+    text-decoration: none;
+}
+
+.button:hover, .button:focus{
+    background-color: #bbbbbb;
+    
+    color: #cccccc;
+    
+    text-decoration: none;
+}
+
+/*----- MODIFIERS -----*/
+
+.button__menu--item{
+    margin: 22px 0px;
+    display: inline-block;
+    
+    background-color: #660066;
+    color: #ffffff;
+    
+}
+
+.button__menu--item:hover, .button__menu--item:focus{
+    background-color: #3c003c;
+    
+    color: #ff6600;
+    
+    text-decoration: none;
+}
+
+.button__sidebar--item{
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0px;
+    display: inline-block;
+    
+    text-align: center;
+    
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.button__sidebar--item:hover, .button__sidebar--item:focus{
+    background-color: #fe3b00;
+    
+    color: #ffffff;
+    
+    text-decoration: none;
+}
+
+.button__form{
+    padding: 10px 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+    
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.button__form:hover, .button__form:focus{
+    background-color: #fe3b00;
+    
+    color: #ffffff;
+    
+    text-decoration: none;
+}
+
+/*--------------------------*\
+            SIDEBAR
+\*--------------------------*/
+
+.sidebar__item{
+    display: block;
+}
+
+/*--------------------------*\
+            FOOTER
+\*--------------------------*/
+
+.footer__text{
+    margin: 0;
+    padding: 20px 0;
+    
+    color: #ffffff;
+    
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/*--------------------------*\
+            FORM
+\*--------------------------*/
+
+.form__title{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    
+    border-bottom: 1px solid #ff6600;
+    
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3c003c;
+}
+
+.form__subtitle{
+    margin-bottom: 30px;
+    padding-top: 0px;
+    
+    border-bottom: 1px solid #cccccc;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.enter-group{
+    margin-bottom: 15px;
+}
+
+.enter-group > label {
+    display: block;
+    
+    font-weight: bold;
+}
+
+.field{
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+}
+
+/*----- MODIFIERS -----*/
+
+.field__login{
+    display: block;
+    width: 100%;
+    height: 2em;
+    
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+}
+
+/*--------------------------*\
+            LOGIN
+\*--------------------------*/
+
+.login-enter-group{
+    margin-top: 15px;
+}
+
+.login-enter-group > label {
+    display: block;
+    
+    font-weight: bold;
+}

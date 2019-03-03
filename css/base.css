@@ -1,0 +1,13 @@
+html{
+    font-size: 62.5%;
+    /* Definindo a fonte padrão do navegador para 10px. CONTA: 10/16 = 0.625... 0.625x100 = 62.5% */
+}
+
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    
+    font-family: arial, sans-serif;
+    font-size: 1.4rem;
+}
