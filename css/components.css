@@ -175,6 +175,12 @@
 
 }
 
+.errorstyle{
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
 /*----- MODIFIERS -----*/
 
 .field__login{

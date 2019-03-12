@@ -53,24 +53,33 @@
                             </li>
                         </ul>
                     
-                        <section>
+                        <form action="#">
                             <div class="col-sm-9">
                                 <h2 class="form__title">Cadastro de aluno</h2>
                                 <div class="enter-group">
                                     <label for="nomealuno">Nome:</label>
-                                    <input id="nomealuno" name="nomealuno" type="text" class="field" required>
+                                    <input id="nomealuno" name="nomealuno" type="text" class="field checkstudent-js" required>
+                                    <p class="errorstyle errorcheckstudent-js"></p>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-9">
+                                    <div class="col-sm-3">
+                                        <div class="enter-group">
+                                            <label for="datanasc">Data de nascimento:</label>
+                                            <input id="datanasc" name="datanasc" type="date" max="2009-03-03" class="field checkstudent-js" required>
+                                            <p class="errorstyle errorcheckstudent-js"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
                                         <div class="enter-group">
                                             <label for="email">E-mail:</label>
-                                            <input id="email" name="email" type="email" class="field" required>
+                                            <input id="email" name="email" type="email" class="field checkstudent-js" required>
+                                            <!-- onblur="emailValidity()" onfocus="messageReset()" -->
+                                            <p class="errorstyle errorcheckstudent-js"></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="enter-group">
-                                            <label for="datanasc">Data de nascimento:</label>
-                                            <input id="datanasc" name="datanasc" type="date" max="2009-03-03" class="field" required>
+                                            <span id="erroremail"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -78,14 +87,15 @@
                                     <div class="col-sm-3">
                                         <div class="enter-group">
                                             <label for="matricula">Matrícula:</label>
-                                            <input id="matricula" name="matricula" maxlength="5" type="text" class="field" required>
+                                            <input id="matricula" name="matricula" maxlength="5" type="text" class="field checkstudent-js" onkeypress="return onlyNumbers(event)" required>
+                                            <p class="errorstyle errorcheckstudent-js"></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="enter-group">
                                             <label for="curso">Curso:</label>
                                             <select id="curso" name="curso" class="field" required>
-                                                <option> - </option>
+                                                <option></option>
                                                 <option value="Edificações">Edificações</option>
                                                 <option value="Eletrotécnica">Eletrotécnica</option>
                                                 <option value="Informática">Informática</option>
@@ -98,18 +108,20 @@
                                     <div class="col-sm-3">
                                         <div class="enter-group">
                                             <label for="telefone">Telefone:</label>
-                                            <input id="telefone" name="telefone" maxlength="11" type="text" class="field" required>
+                                            <input id="telefone" name="telefone" maxlength="11" type="text" class="field checkstudent-js" onkeypress="return onlyNumbers(event)" required>
+                                            <p class="errorstyle errorcheckstudent-js"></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-2">
                                         <div class="enter-group">
-                                            <label for="codigoturma">Cód. Turma:</label>
-                                            <select id="codigoturma" name="codigoturma" class="field" required>
+                                            <label for="codturma">Cód. Turma:</label>
+                                            <select id="codturma" name="codturma" class="field" required>
+                                                <option></option>
                                                 <option value="M/419-13"> M/419-13</option>
                                                 <option value="T/426-12"> T/426-12</option>
                                                 <option value="M/418-11"> M/418-11</option>
                                                 <option value="T/425-10"> T/425-10</option>
-                                            </select>    
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -117,15 +129,15 @@
                                     <div class="col-sm-3">
                                         <div class="enter-group">
                                             <label for="senha">Senha:</label>
-                                            <input id="senha" name="senha" type="password" class="field" required>
+                                            <input id="senha" name="senha" type="password" class="field checkstudent-js" required>
+                                            <p class="errorstyle errorcheckstudent-js"></p>
                                         </div>
                                     </div>
                                 </div>                               
-                                <a class="button button__form" href="#">Cadastrar</a>
-                                
+                                <button type="submit" class="button button__form" onclick="checkingStudent()">Cadastrar</button>
                             </div>
                             
-                        </section>
+                        </form>
                     </div>
                 </div>
         </section>
@@ -135,6 +147,8 @@
                 <p class="footer__text">&copy; 2019. Sistema de Distribuição de Livros Didáticos - Todos os direitos reservados.</p>
             </div>
         </footer>
-        
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>     
+    <script type="text/javascript" src="js/cadastro.js"></script>    
     </body>
 </html>

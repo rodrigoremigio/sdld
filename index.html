@@ -53,19 +53,20 @@
                             </li>
                         </ul>
                     
-                        <section>
+                        <form action="#">
                             <div class="col-sm-9">
                                 <h2 class="form__title">Cadastro de livro</h2>
                                 <div class="enter-group">
                                     <label for="titulo_subtitulo_livro">Título e subtítulo:</label>
-                                    <input id="titulo_subtitulo_livro" name="titulo_subtitulo_livro" type="text" class="field" required>
+                                    <input id="titulo_subtitulo_livro" name="titulo_subtitulo_livro" type="text" class="field checkbook-js" required>
+                                    <p class="errorstyle errorcheckbook-js"></p>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="enter-group">
-                                            <label for="disciplina">Disciplina:</label>
+                                            <label for="disciplina">Disciplinas:</label>
                                             <select id="disciplina" name="disciplina" class="field" required>
-                                                <option> - </option>
+                                                <option></option>
                                                 <option value="Biologia"> Biologia</option>
                                                 <option value="Física"> Física</option>
                                                 <option value="Geografia"> Geografia</option>
@@ -80,33 +81,38 @@
                                     <div class="col-sm-2">
                                         <div class="enter-group">
                                             <label for="ano">Ano:</label>
-                                            <input id="ano" name="ano" type="text" maxlength="4" size="5" class="field" required>
+                                            <input id="ano" name="ano" type="text" maxlength="4" size="5" class="field checkbook-js" onkeypress="return onlyNumbers(event)" required>
+                                            <p class="errorstyle errorcheckbook-js"></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="enter-group">
-                                    <label for="autores">Autores:</label>
-                                    <input id="autores" name="autores" type="text" class="field" required>
+                                    <label for="autores">Autor(a)(es):</label>
+                                    <input id="autores" name="autores" type="text" class="field checkbook-js" required>
+                                    <p class="errorstyle errorcheckbook-js"></p>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-5">
                                         <div class="enter-group">
                                             <label for="editora">Editora:</label>
-                                            <input id="editora" name="editora" type="text" class="field" required>
+                                            <input id="editora" name="editora" type="text" class="field checkbook-js" required>
+                                            <p class="errorstyle errorcheckbook-js"></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="enter-group">
                                             <label for="volume">Volume:</label>
-                                            <input id="volume" name="volume" type="text" class="field" required>
+                                            <input id="volume" name="volume" type="text" class="field checkbook-js" required>
+                                            <p class="errorstyle errorcheckbook-js"></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-3">
                                         <div class="enter-group">
                                             <label for="isbn">ISBN:</label>
-                                            <input id="isbn" name="isbn" type="text" class="field" required>
+                                            <input id="isbn" name="isbn" maxlength="13" type="text" class="field checkbook-js" onkeypress="return onlyNumbers(event)" required>
+                                            <p class="errorstyle errorcheckbook-js"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -114,15 +120,14 @@
                                     <div class="col-sm-3">
                                         <div class="enter-group">
                                             <label for="senha">Senha:</label>
-                                            <input id="senha" name="senha" type="password" class="field" required>
+                                            <input id="senha" name="senha" type="password" class="field checkbook-js" required>
+                                            <p class="errorstyle errorcheckbook-js"></p>
                                         </div>
                                     </div>
                                 </div>
-                                <a class="button button__form" href="#">Cadastrar</a>
-                                
+                                <button type="submit" class="button button__form" onclick="checkingBook()">Cadastrar</button>
                             </div>
-                            
-                        </section>
+                        </form>
                     </div>
                 </div>
         </section>
@@ -132,6 +137,8 @@
                 <p class="footer__text">&copy; 2019. Sistema de Distribuição de Livros Didáticos - Todos os direitos reservados.</p>
             </div>
         </footer>
-        
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>     
+    <script type="text/javascript" src="js/cadastro.js"></script>
     </body>
 </html>
